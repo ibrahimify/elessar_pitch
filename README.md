@@ -10,9 +10,9 @@ Open `index.html` in a browser.
 
 ## Structure
 
-- `index.html` — presentation
-- `deck-stage.js` — slide engine
-- `assets/` — images and supporting assets
+- `index.html` - presentation
+- `deck-stage.js` - slide engine
+- `assets/` - images and supporting assets
 
 ## Deployment
 

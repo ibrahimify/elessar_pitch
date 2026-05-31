@@ -1,21 +1,21 @@
-# ELESSAR — Pitch Deck (design weapon)
+# ELESSAR - Pitch Deck (design weapon)
 
 3 min. Zoom. 100 pitches that day. This one fractures attention.
 
 ## THE LAW (non-negotiable)
 - Palette: bg #F5F3EE / ink #0A0A0A / red #CC0000. NOTHING else. (slide 00 is pure black #0A0A0A)
 - Fonts: Arial Black (headlines, numbers) + Arial Regular (body). Two fonts, used violently.
-- Scale: TWO sizes only — MASSIVE and small. The contrast IS the design.
+- Scale: TWO sizes only - MASSIVE and small. The contrast IS the design.
 - Alignment: left by default; intentional bleed/low-sit where noted.
 - One animation per slide. One reveal, then hold.
 - NO: gradients, rounded corners, icons, stock photos, top-left titles, >3 elements, bullet points.
 
 ## Title sequence (the chapters)
-- 00  (black silence — no text)
+- 00  (black silence - no text)
 - 01  THE EXPORT RUNS EVERY MONTH.  / No one knows what it says.
 - 02  110,000,000 Ft  (one dept, one hospital → ×163 → ~8B Ft)
 - 03  SAME DATA.  (CFO sees strategy / ANALYST sees waste / One upload.)
-- 04  OPEN IT NOW.  (QR — the live product)
+- 04  OPEN IT NOW.  (QR - the live product)
 - 05  EXPORT → UPLOAD → COMPUTE → DECIDE  (the machine)
 - 06  GLOBAL VENDORS WON'T. We already did.  (NEAK DRG / NETWORK / 6 MONTHS)
 
@@ -37,4 +37,4 @@ No mid sizes.
 - 06: WON'T. lands in red (≤0.4s).
 
 ## QR
-https://ibrahimify.github.io/elessar/ — sharp black modules, big, centered, ≥ ~520px on canvas.
+https://ibrahimify.github.io/elessar/ - sharp black modules, big, centered, ≥ ~520px on canvas.

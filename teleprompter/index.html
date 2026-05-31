@@ -112,7 +112,7 @@ body { background: transparent; }
 </style>
 
 <div class="wrap">
-<h2 class="sr-only" style="position:absolute;width:1px;height:1px;overflow:hidden">Elessar pitch teleprompter — 3 minute timer with slide-by-slide script</h2>
+<h2 class="sr-only" style="position:absolute;width:1px;height:1px;overflow:hidden">Elessar pitch teleprompter - 3 minute timer with slide-by-slide script</h2>
 
 <div class="top-bar">
   <div class="total-timer" id="total-timer">3:00</div>
@@ -167,7 +167,7 @@ const slides = [
 
 The systems work perfectly.
 
-A data analyst we interviewed confirmed it — the exports run, the numbers are accurate, everything is there.
+A data analyst we interviewed confirmed it - the exports run, the numbers are accurate, everything is there.
 
 Nobody opens them.
 
@@ -185,7 +185,7 @@ The money is lost because no one can read what the system is saying."`,
 
 One department.
 
-110 million forints — gone. Not stolen. Not mismanaged.
+110 million forints - gone. Not stolen. Not mismanaged.
 
 Just invisible.
 
@@ -193,12 +193,12 @@ Just invisible.
 
 Hungary has 163 hospitals.
 
-If the pattern holds — and we have reason to believe it does — the system loses roughly 8 billion forints a year.
+If the pattern holds - and we have reason to believe it does - the system loses roughly 8 billion forints a year.
 
 Not because anyone did anything wrong.
 
 Because the data speaks a language nobody translated."`,
-    hint: "Say 'if the pattern holds' — it's honest and it's stronger than fake precision."
+    hint: "Say 'if the pattern holds' - it's honest and it's stronger than fake precision."
   },
   {
     id: "03",
@@ -251,18 +251,18 @@ Go ahead. Open it."
     name: "The machine",
     seconds: 25,
     tone: "Simple. Like explaining to a smart 12-year-old.",
-    script: `"Here is how it works — and it is simpler than you think.
+    script: `"Here is how it works - and it is simpler than you think.
 
-Hospitals already have the data sitting in their systems. They export a CSV file — something they already do every month.
+Hospitals already have the data sitting in their systems. They export a CSV file - something they already do every month.
 
 They upload it to Elessar. No installation. No IT department. No six-month project.
 
-We run it through Hungarian NEAK billing logic — which is the specific calculation system every hospital in this country uses — and we split it into two views.
+We run it through Hungarian NEAK billing logic - which is the specific calculation system every hospital in this country uses - and we split it into two views.
 
 Leadership sees the big picture. Finance sees the detail.
 
 That is the entire product. Four steps. One upload. Two answers."`,
-    hint: "NEAK DRG — don't explain it deeply, just name it. The doctors in the room will nod."
+    hint: "NEAK DRG - don't explain it deeply, just name it. The doctors in the room will nod."
   },
   {
     id: "06",
@@ -322,7 +322,7 @@ function renderCard() {
   document.getElementById('slide-card-wrap').innerHTML = `
     <div class="slide-card">
       <div class="slide-header">
-        <span class="slide-name">Slide ${s.id} — ${s.name}</span>
+        <span class="slide-name">Slide ${s.id} - ${s.name}</span>
         <span class="slide-duration" id="slide-time">${fmt(remaining)}</span>
       </div>
       <div class="slide-timer-bar"><div class="slide-timer-fill" id="slide-fill" style="width:${pct}%"></div></div>

@@ -35,14 +35,14 @@
   .red{color:var(--red);}
   .gray{color:var(--gray);}
 
-  /* Type — two voices only: MASSIVE (Arial Black) and small (Arial) */
+  /* Type - two voices only: MASSIVE (Arial Black) and small (Arial) */
   .black-face{font-family:"Arial Black", Arial, sans-serif; font-weight:900;
     text-transform:uppercase; line-height:0.9; letter-spacing:-0.03em;}
   .no-caps{text-transform:none;}
   .small{font-size:var(--type-small); line-height:1.35; letter-spacing:0;}
   .foot{font-size:var(--type-foot); line-height:1.4; color:var(--gray);}
 
-  /* Reveal system — JS toggles .show; resting state is always visible. */
+  /* Reveal system - JS toggles .show; resting state is always visible. */
   .reveal{opacity:0; transition:opacity .55s ease, transform .5s cubic-bezier(.2,.7,.2,1);}
   .reveal.from-left{transform:translateX(-34px);}
   .reveal.from-right{transform:translateX(34px);}
@@ -156,12 +156,12 @@
 <body>
 <deck-stage width="1920" height="1080" no-rail>
 
-  <!-- 00 — SILENCE -->
+  <!-- 00 - SILENCE -->
   <section data-label="00" class="s-black">
     <div class="frame frame--black"></div>
   </section>
 
-  <!-- 01 — THE WOUND -->
+  <!-- 01 - THE WOUND -->
   <section data-label="01">
     <div class="frame s01">
       <h1 class="mega black-face ink">
@@ -176,7 +176,7 @@
     </div>
   </section>
 
-  <!-- 02 — THE NUMBER -->
+  <!-- 02 - THE NUMBER -->
   <section data-label="02">
     <div class="frame s02">
       <div class="s02-top">
@@ -202,7 +202,7 @@
     </div>
   </section>
 
-  <!-- 03 — THE INSIGHT -->
+  <!-- 03 - THE INSIGHT -->
   <section data-label="03">
     <div class="frame s03">
       <h1 class="mega black-face"><span class="ink">Same</span><span class="red">data.</span></h1>
@@ -220,7 +220,7 @@
     </div>
   </section>
 
-  <!-- 04 — THE PROOF -->
+  <!-- 04 - THE PROOF -->
   <section data-label="04">
     <div class="frame s04">
       <h1 class="mega black-face ink">
@@ -234,7 +234,7 @@
     </div>
   </section>
 
-  <!-- 05 — THE MACHINE -->
+  <!-- 05 - THE MACHINE -->
   <section data-label="05">
     <div class="frame s05">
       <div class="s05-grid">
@@ -269,7 +269,7 @@
     </div>
   </section>
 
-  <!-- 06 — WHY YOU. WHY NOW. -->
+  <!-- 06 - WHY YOU. WHY NOW. -->
   <section data-label="06">
     <div class="frame s06">
       <div class="s06-head">
@@ -291,12 +291,12 @@
           <span class="row-label">6 Months</span>
           <span class="row-desc">Domain ontology, data mappings, validation rules. The boring work nobody wants to do twice.</span>
         </div>
-        <p class="s06-ask">[ The ask — amount · what it buys · the milestone it reaches ]</p>
+        <p class="s06-ask">[ The ask - amount · what it buys · the milestone it reaches ]</p>
       </div>
     </div>
   </section>
 
-  <!-- 07 — THE HOLD -->
+  <!-- 07 - THE HOLD -->
   <section data-label="07">
     <div class="frame s07">
       <span class="s07-num black-face red no-caps">110,000,000</span>
@@ -338,9 +338,9 @@
 
   function renderQRs(){
     if(!window.qrcode) return;
-    var a = document.getElementById('qrcode');        // slide 04 — black on off-white
+    var a = document.getElementById('qrcode');        // slide 04 - black on off-white
     if(a && !a.dataset.done){ a.innerHTML = buildQRSvg('#0A0A0A'); a.dataset.done = '1'; }
-    var b = document.getElementById('qrcode-inv');    // slide 07 — black on white stamp
+    var b = document.getElementById('qrcode-inv');    // slide 07 - black on white stamp
     if(b && !b.dataset.done){ b.innerHTML = buildQRSvg('#0A0A0A'); b.dataset.done = '1'; }
   }
 
