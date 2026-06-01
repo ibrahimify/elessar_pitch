@@ -75,8 +75,21 @@
   .s02-num{font-size:280px; line-height:0.82; letter-spacing:-0.04em;}
   .s02-unit{display:block; font-size:88px; margin-top:6px; line-height:0.9;}
   .s02-cap{margin-top:26px;}
-  .s02-bottom{display:flex; flex-direction:column;}
+  .s02-bottom{position:relative; display:flex; flex-direction:column;}
+  .s02-bottom .rule{width:68%;}
   .s02-foot{display:flex; gap:150px; margin-top:30px;}
+  .s02-map{
+    position:absolute;
+    right:-18px;
+    bottom:-34px;
+    width:470px;
+    height:auto;
+    opacity:0;
+    transform:translateY(18px);
+    transition:opacity .75s ease, transform .75s cubic-bezier(.2,.7,.2,1);
+    pointer-events:none;
+  }
+  .s02-map.show{opacity:1; transform:none;}
   .s02-fcol{display:flex; flex-direction:column;}
   .s02-x{font-size:120px;}
   .s02-flabel{margin-top:8px;}
@@ -188,6 +201,7 @@
       </div>
       <div class="s02-bottom">
         <hr class="rule">
+        <img class="s02-map" id="hungaryMap" src="assets/map.png" alt="Hungary hospital map">
         <div class="s02-foot">
           <div class="s02-fcol">
             <span class="s02-x black-face ink">×163</span>
@@ -346,19 +360,32 @@
 
   function countUp(el){
     var target = 110000000, dur = 2500, start = null;
+    var map = el.closest('section').querySelector('#hungaryMap');
+    if(map){
+      map.classList.remove('show');
+      map.style.transition = '';
+      map.style.opacity = '';
+      map.style.transform = '';
+    }
     function fmt(v){ return Math.round(v).toLocaleString('en-US'); }
+    function showMap(){
+      if(map) map.classList.add('show');
+    }
     function step(ts){
       if(start===null) start = ts;
       var p = Math.min((ts-start)/dur, 1);
       var eased = 1 - Math.pow(1-p, 3); // ease-out cubic
       el.textContent = fmt(target*eased);
       if(p<1) requestAnimationFrame(step);
-      else el.textContent = fmt(target);
+      else {
+        el.textContent = fmt(target);
+        showMap();
+      }
     }
     el.textContent = "0";
     requestAnimationFrame(step);
     // Safety net: guarantee the final value even if rAF is throttled.
-    setTimeout(function(){ el.textContent = fmt(target); }, dur + 400);
+    setTimeout(function(){ el.textContent = fmt(target); showMap(); }, dur + 400);
   }
 
   function runReveals(slide){
